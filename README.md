@@ -4,6 +4,10 @@
 
 ![image](https://github.com/user-attachments/assets/b9794f52-f7a6-4784-8ace-1228ba50f20f)
 
+Isabel 
+Elizabeth
+Alfonso
+Nicolás
 
 🔹 *Un juego de supervivencia espacial donde cada decisión cuenta.* 🔹  
 
