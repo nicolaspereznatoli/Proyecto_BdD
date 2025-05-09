@@ -3,12 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonCamera : MonoBehaviour
 {
-    [SerializeField] private Camera _camera;
+    [SerializeField] public Camera _camera;
     [SerializeField] private int _lookSpeedMouse;
     [SerializeField] private int _moveSpeed;
     [SerializeField] private int _jumpHeight;
     [SerializeField] private float _sprint;
     [SerializeField] private float _gravity;
+    [SerializeField] public Vector3 _posicion;
 
     private Vector2 _rotation;
     private CharacterController _characterController;
@@ -21,6 +22,7 @@ public class FirstPersonCamera : MonoBehaviour
 
     private void Start()
     {
+        _posicion = _camera.transform.position;
         _characterController = GetComponent<CharacterController>();
     }
 
