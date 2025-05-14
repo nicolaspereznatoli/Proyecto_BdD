@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 
 
-public class interactuar : MonoBehaviour
+public class interactuar: MonoBehaviour
 {
     LayerMask mask;
     public float distancia = 1.5f;
@@ -16,15 +16,16 @@ public class interactuar : MonoBehaviour
     GameObject ultimoReconocido = null;
      void Start()
     {
-        mask = LayerMask.GetMask("Raycast Detect");
+        mask = LayerMask.GetMask("RaycastDetect");
         TextDetect.SetActive(false);
     }
      void Update()
     {
+        
         RaycastHit hit;
         if(Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward),out hit, distancia, mask))
-        {
-            Deselect();
+        {Deselect();
+            
             selectedObject(hit.transform);
             if (hit.collider.tag == "objetoInteractivo")
             {
